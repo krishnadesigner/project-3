@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0efef;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 50px;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* === common css ends === */
+
+
+/* === header css start === */
+.header {
+    width: 100%;
+    background-color: black;
+    padding: 18px 0;
+    position: fixed;
+    z-index: 10000;
+}
+
+.header .navbar .logo {
+    font-size: 25px;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.header .navbar .span1 {
+    color: white;
+}
+
+.header .navbar .span {
+    color: bisque;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .navbar ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.header .navbar ul li {
+    margin-left: 25px;
+}
+
+.header .navbar ul li a {
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/* banner start */
+.banner {
+
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.banner .banner-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-content h3 {
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+}
+
+.banner .banner-content h1 {
+    font-size: 60px;
+    color: white;
+    margin: 30px 0;
+}
+
+.banner .banner-content .btn {
+    padding: 18px 35px;
+    background-color: #f5c828;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.banner .banner-content .btn:hover {
+    background-color: #d4b851;
+}
+
+
+/* === header css ends === */
+
+
+/* === service css start === */
+.service-section {
+    padding: 100px 0;
+}
+
+
+
+.service-section .service-content {
+    padding: 40px;
+    display: flex;
+}
+
+.service-section .service-content .service-item {
+    width: 360px;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-section .service-content .service-item i {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: #f5c828;
+    margin-bottom: 20px;
+}
+
+.service-section .service-content .service-item h2 {
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+.service-section .service-content .service-item p {
+    font-size: 17px;
+    color: gray;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* === service css ends === */
+
+
+/* === portfolio css start === */
+.portfolio {
+    padding: 70px 0;
+}
+
+.port {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.portfolio-content {
+    width: 370px;
+    overflow: hidden;
+}
+
+.portfolio-content .port-item {
+    position: relative;
+}
+
+
+.portfolio-content .port-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: -100%;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #EFCA09;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: .4s;
+    opacity: .8;
+}
+
+.portfolio-content .port-item .overlay a {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    z-index: 1000;
+}
+
+.portfolio-content .port-item:hover .overlay {
+    top: 0;
+    visibility: inherit;
+}
+
+.portfolio-content .div {
+    background-color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+.portfolio-content .div h2 {
+    margin-bottom: 13px;
+}
+
+/* === portfolio css ends === */
+
+
+/* === team css start === */
+.team-section {
+    padding: 40px 0;
+}
+
+.team-body {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.team-section .team-body .team-content {
+    width: 360px;
+    border: 1px solid red;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-body .team-content img {
+    border-radius: 50%;
+    /* border: 2px solid gray; */
+    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.team-body .team-content h2 {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 18px 0;
+}
+
+.team-body .team-content h5 {
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+.team-body .team-content .div i {
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 11px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.team-body .team-content .div i:hover {
+    color: #d4b851;
+    background-color: #f0efef;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.para {
+    text-align: center;
+    color: gray;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+/* === team css ends === */
+
+
+/* === contact css start === */
+.contact-section {
+    background-color: #797676;
+    background-image: url(../images/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    width: 49%;
+}
+
+.text {
+    width: 49%;
+}
+
+.text textarea {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input input {
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    border: none;
+}
+
+.button {
+    text-align: center;
+}
+
+.button button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #EFCA09;
+    border: none;
+    outline: none;
+    margin-bottom: 80px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.button button:hover {
+    color: white;
+    background-color: #d4b851;
+}
+
+/* === contact css ends === */
